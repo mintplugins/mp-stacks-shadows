@@ -91,6 +91,18 @@ function mp_stacks_shadows_create_meta_box(){
 				'field_value' => '100',
 				'field_showhider' => 'brick_ct1_dropshadow_showhider',
 			),
+			array(
+				'field_id'			=> 'brick_ct1_shadow_weight',
+				'field_title' 	=> __( 'Shadow Weight', 'mp_stacks'),
+				'field_description' 	=> 'Set the weight of the shadow.',
+				'field_type' 	=> 'select',
+				'field_select_values' => array( 
+					'normal_weight' => __( 'Normal Weight', 'mp_stacks_shadows' ),
+					'double_weight' => __( 'Double Weight', 'mp_stacks_shadows' ),
+				),
+				'field_value' => 'normal_weight',
+				'field_showhider' => 'brick_ct1_dropshadow_showhider',
+			),
 		array(
 			'field_id'			=> 'brick_ct2_dropshadow_showhider',
 			'field_title' 	=> __( 'Content-Type 2\'s Drop Shadow', 'mp_stacks_shadow'),
@@ -144,6 +156,18 @@ function mp_stacks_shadows_create_meta_box(){
 				'field_description' 	=> 'Set the opacity of the shadow.',
 				'field_type' 	=> 'input_range',
 				'field_value' => '100',
+				'field_showhider' => 'brick_ct2_dropshadow_showhider',
+			),
+			array(
+				'field_id'			=> 'brick_ct2_shadow_weight',
+				'field_title' 	=> __( 'Shadow Weight', 'mp_stacks'),
+				'field_description' 	=> 'Set the weight of the shadow.',
+				'field_type' 	=> 'select',
+				'field_select_values' => array( 
+					'normal_weight' => __( 'Normal Weight', 'mp_stacks_shadows' ),
+					'double_weight' => __( 'Double Weight', 'mp_stacks_shadows' ),
+				),
+				'field_value' => 'normal_weight',
 				'field_showhider' => 'brick_ct2_dropshadow_showhider',
 			),
 		
