@@ -1,5 +1,7 @@
 <?php 
 /**
+ * Firefox Shadows can't be added to style tags in the body. So we add it to the CSS in MP Stacks the way we normally do. 
+ * Hopefully webkit browsers speed up their drop shadow handling soon so we can do webkit shadows this way too. 
  * Filter CSS Output for Content-Type 1
  */
 function mp_stacks_shadows_ct1($css_output, $post_id ){
@@ -59,7 +61,7 @@ add_filter('mp_brick_first_container_css', 'mp_stacks_shadows_ct1_double_weight'
  * Filter CSS Output for Content-Type 1
  */
 function mp_stacks_shadows_ct2($css_output, $post_id ){
-		
+	  	
 	//Should we show the shadow?
 	$show_shadow = mp_core_get_post_meta( $post_id, 'brick_ct2_shadow_enabled', '' );
 	
