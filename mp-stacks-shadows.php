@@ -158,7 +158,7 @@ function mp_stacks_shadows_include_files(){
 		/**
 		 * Filters which modify the image on output
 		 */
-		require( MP_STACKS_SHADOWS_PLUGIN_DIR . 'includes/misc-functions/shadow-actions.php' );
+		require( MP_STACKS_SHADOWS_PLUGIN_DIR . 'includes/misc-functions/shadow-css-actions.php' );
 		
 	}
 }
